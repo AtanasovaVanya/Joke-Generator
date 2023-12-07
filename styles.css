@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html {
@@ -14,31 +15,127 @@ body {
     font-weight: 700;
     text-align: center;
 
+}
+
+.single-joke-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.joke {
+    flex: 1;
+    margin-right: 10px;
+}
+
+div.content {
+    display: flex;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
 
 }
 
 div.joke-container {
     border: 1px solid grey;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+
+}
+
+div.favorite-joke-container {
+    border: 1px solid grey;
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.long-joke {
+    font-size: 1rem;
+}
+
+/* Buttons */
+
+button.get-jokes {
+    cursor: pointer;
+    border-radius: 10px;
+    height: 1.5rem;
+    width: 9%;
+    color: #ffff;
+    background-color: #333;
+    outline: none;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+    font-size: 0.7rem;
+}
+
+button.get-jokes:hover {
+    filter: brightness(115%);
+}
+
+button.get-jokes:active {
+    transform: translate(0 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+button.like-joke,
+button.delete-joke,
+button.rate-joke {
+    cursor: pointer;
+    border: 0;
+    padding: none;
+    background: none;
+}
+
+.fa-thumbs-up {
+    color: #328ba8;
+    font-size: 1.2rem;
     display: inline-block;
 }
 
-div.favorite-joke {
-    border: 1px solid grey;
-}
-
-
-/* .parent {
-    border: 1px;
-    padding: 2rem 2rem;
-}
-
-.child {
+.fa-trash {
+    color: #f53636;
+    font-size: 1.2rem;
     display: inline-block;
-    border: 1px solid grey;
-    padding: 1rem 1rem;
-    padding-right: 1rem;
+}
 
-    width: 45%;
-    height: 300px;
-    vertical-align: middle;
-} */
+.fa-star {
+    color: #f5cf36;
+    font-size: 1.2rem;
+}
+
+.fa-thumbs-up:hover {
+    font-size: 1.5rem;
+}
+
+.fa-trash:hover {
+    font-size: 1.5rem;
+}
+
+.fa-star:hover {
+    font-size: 1.5rem;
+}
+
+/* Media Query: Table ot Smaller */
+@media screen and (max-width:1000px) {
+
+    .joke-container,
+    .favorite-joke-container,
+    button.get-jokes {
+        margin: auto 5px;
+        font-size: 0.5rem;
+    }
+}
