@@ -1,4 +1,4 @@
 # Joke-Generator
  Joke generator with a keyword
 
- [View Live](https://github.com/AtanasovaVanya/Joke-Generator/index.html)
+ [View Live](https://raw.githack.com/AtanasovaVanya/Joke-Generator/main/index.html)
