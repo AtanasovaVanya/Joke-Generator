@@ -18,47 +18,34 @@ body {
 
 .single-joke-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
 }
 
 .joke {
-    /* flex: 1; */
+    flex: 1;
     margin-bottom: 10px;
 }
 
 div.content {
     display: flex;
-    flex-direction: column;
     border: 1px solid black;
     margin: 1rem;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     font-size: 1.25rem;
-    /* justify-content: space-evenly;
+    justify-content: space-evenly;
     justify-items: center;
-    align-items: center; */
+    align-items: center;
 
 }
 
+div.favorite-joke-container,
 div.joke-container {
     border: 1px solid grey;
-    /* margin-right: 20px; */
-    margin-top: 20px;
-    padding: 20px 30px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
-
-
-}
-
-div.favorite-joke-container {
-    border: 1px solid grey;
-    margin-top: 20px;
-    padding: 20px 30px;
+    margin: 20px 20px;
+    padding: 20px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
@@ -75,7 +62,7 @@ button.get-jokes {
     cursor: pointer;
     border-radius: 10px;
     height: 1.5rem;
-    width: 9%;
+    width: 11%;
     color: #ffff;
     background-color: #333;
     outline: none;
@@ -131,19 +118,19 @@ button.rate-joke {
 }
 
 /* Media Query: Tablet or Smaller */
-@media screen and (max-width: 1000px) {
-    button.get-jokes {
-        width: 50%;
-        font-size: 0.5rem;
-    }
-}
-
-@media screen and (max-width:1000px) {
+@media screen and (max-width:768px) {
 
     div.joke-container,
-    div.favorite-joke-container,
+    div.favorite-joke-container {
+        margin: 10px auto;
+        font-size: 0.8rem;
+        display: flexbox;
+        flex-wrap: nowrap;
+
+    }
+
     button.get-jokes {
-        margin: auto;
+        width: 50%;
         font-size: 0.8rem;
     }
 }
